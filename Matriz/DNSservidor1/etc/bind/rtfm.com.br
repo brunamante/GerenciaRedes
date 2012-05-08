@@ -1,0 +1,27 @@
+; Dominio rtfm.com.br
+
+; VARIAVEIS
+$TTL 86400
+
+;OBRIGATORIO 
+; SOA: inicio de autoridade
+@ IN SOA sumatra.rtfm.com.br. administrador.rtfm.com.br. (
+	2012042400 ; serial
+	1d ; refresh
+	1h ; retry
+	1w ; expire
+	1d ; negative cache TTL 
+)
+
+; NS: servidor(es) DNS
+	IN NS sumatra.rtfm.com.br.
+
+; OPCIONAL
+; A: endereço de maquina
+sumatra IN A 192.168.2.4
+
+; CNAME: "apelido" de maquina
+www   IN CNAME sumatra
+email IN CNAME sumatra
+mail  IN CNAME sumatra
+dns   IN CNAME sumatra
